@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        >
+        <!--        tools:layout_editor_absoluteX="171dp"-->
+        <!--        tools:layout_editor_absoluteY="16dp"-->
+
+
+
+
+
+    </androidx.viewpager2.widget.ViewPager2>
+    <Button
+        android:id="@+id/btnprevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:text="prev"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@android:drawable/ic_media_previous"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:backgroundTint="#bebebe"
+        app:layout_constraintEnd_toStartOf="@+id/btnnext"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memeimage" />
+
+    <Button
+        android:id="@+id/btnnext"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:text="next"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@android:drawable/ic_media_next"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:backgroundTint="#bebebe"
+        app:layout_constraintEnd_toStartOf="@+id/btnshare"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnprevious"
+        app:layout_constraintTop_toBottomOf="@+id/memeimage" />
+
+    <Button
+        android:id="@+id/btnshare"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@android:drawable/ic_menu_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:text="share"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:backgroundTint="#bebebe"
+        app:layout_constraintEnd_toStartOf="@+id/btndelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnnext"
+        app:layout_constraintTop_toBottomOf="@+id/memeimage" />
+
+    <Button
+        android:id="@+id/btndelete"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        app:icon="@android:drawable/ic_menu_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:text="delete"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:backgroundTint="#bebebe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnshare"
+        app:layout_constraintTop_toBottomOf="@+id/memeimage"
+        tools:ignore="UnknownIdInLayout"
+        tools:onClick="@android:string/dialog_alert_title" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
